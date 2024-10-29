@@ -1,0 +1,334 @@
+/*site ao todo*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+/*estilo cabeçlho com banner*/
+html{
+    height: 500vh;
+    background-color: #ffffff;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header{
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+header.rolagem{
+    background-color: #fff;
+    padding: 20px 4%;
+}
+
+header.rolagem a, header.rolagem i{
+    color: #213c8d;
+}
+header.rolagem a:hover, header.rolagem:hover{
+    color: #fdc7ac;
+}
+
+header i{
+    font-size: 30px;
+    color: #fff;
+}
+header i:hover{
+    color: #fdc7ac;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    color: #fdc7ac;
+      
+}
+
+.btn-contato button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: #213c8d;
+    color: #fff;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.btn-contato button:hover{
+    background-color: #fdc7ac;
+}
+
+.banner{
+    height: 100vh;
+    background-image: url(../images/banner.jpg);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1{
+    font-size: 4em;
+}
+
+.banner h1 span{
+    color: #fdc7ac;
+}
+
+/*icone de menu*/
+.menu-icon{
+    display: none;
+    position: relative;
+    z-index: 10;
+}
+
+.titulo{
+    font-size: 30px;
+    color: #213c8d;
+    padding: 10px;
+    text-align: center;
+    margin: 15px;
+}
+
+/*section texto container*/
+.textoMain .containerTexto{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+.textoMain .texto_container{
+    width: 100%;
+    padding: 15px;
+    margin: 30px 150px auto; 
+    font-size: 20px;
+    text-align: start;
+
+}
+.textoMain .texto_container span{
+    color: #213c8d;
+    font-size: 21px;
+    font-weight: bold;
+}
+.textoMain img{
+    width: 65%;
+    margin-left: 20%;
+}
+
+/*section diferenciais*/
+.diferenciais .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+
+}
+
+.diferenciais .card{
+    width: 30%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.diferenciais .card:hover{
+    box-shadow: 0px 10px 67px 8px #e6e6fa85; 
+}
+
+.diferenciais .card img{
+    width: 60px;
+}
+
+.diferenciais .card .titulo{
+    margin: 13px 0;
+    font-weight: 600;
+}
+
+.diferenciais .titulo h3{
+    margin-top: 20px;
+}
+
+
+/*section depoimento*/
+.depoimentoMain h3{
+    text-align: center;
+}
+
+.depoimentoMain p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.depoimentoMain .cards{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.depoimentoMain .cards-item{
+    background-color: #d7f0ff;
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 350px;
+    transition: 0.3s;
+}
+
+.depoimentoMain .cards-item img{
+    border-radius: 100%;
+    width: 80px;
+    display: block;
+    margin: 10px auto;
+}
+
+.depoimentoMain .cards-item .nome-usuario{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.depoimentoMain .cards-item .depoimento-user{
+    font-size: 15px;
+    padding: 0 15px;
+    transition: 0.3s;
+}
+
+.depoimentoMain .cards-item .estrelas{
+    margin: 15px 0;
+    border-top: 2px solid #71767a23;   
+}
+
+.depoimentoMain .cards-item .estrelas i{
+    color: #213c8d;
+    margin-top: 15px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.depoimentoMain .cards-item:hover{
+    background-color: #3857b7;
+    margin-top: -5px;
+}
+
+.depoimentoMain .cards-item:hover .nome-usuario,
+.depoimentoMain .cards-item:hover .depoimento-user,
+.depoimentoMain .cards-item:hover .estrelas i{
+    color: #fff;
+
+}
+
+
+/*responsivo*/
+@media (max-width: 960px){
+    .menu-icon{
+        display: inline-block;
+    }
+    .banner{
+        height: 100vh;
+        background-image: url(../images/banner.jpg);
+        background-position: 100% 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ul {
+        position: fixed;
+        background-color: #213c8d;
+       
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: 100%;
+        transition: 0.3s;
+        
+        justify-content: center;
+
+    }
+    .ul li{
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .btn-contato button{
+        width: 120px;
+        height: 40px;
+        border: 0;
+        background-color: #8da4e9;
+        color: #fff;
+        cursor: pointer;
+        transition: 2s;
+    }
+    .ul.ativo{
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+
+    }
+    .diferenciais .container{
+        flex-direction: column;
+    }
+    .diferenciais .card{
+        width: 100%;
+    }
+    .textoMain .texto_container{
+    width: 100%;
+    margin: 15px ; 
+    font-size: 20px;
+    text-align: center;
+    }
+    .banner{
+        font-size: 10px;
+        text-align: center;
+    }
+    .textoMain img{
+        display: flex;
+        width: 65%;
+        flex-direction: column;
+    }
+    .depoimentoMain .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .depoimentoMain .cards{
+        width: 100%;
+    }
+    .containerTexto{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
