@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
     <title>Trabalho final</title>
 </head>
@@ -58,7 +59,7 @@
                 </div>
             </div> <!--final div container texto-->
         </section> <!--final section texto-->
-        <section class="diferenciais"> <!--section diferenciais-->
+        <section class="diferenciais" id="diferenciais"> <!--section diferenciais-->
             <div class="titulo"> 
                 <h3>O que oferecemos?</h3>
             </div>
@@ -80,7 +81,7 @@
             </div> <!--Final div card diferenciais 3-->
         </div> <!--final div container-->
         </section> <!-- final section diferenciais-->
-        <section class="depoimentoMain"> <!--section depoimentos-->
+        <section class="depoimentoMain" id="depoimentoMain"> <!--section depoimentos-->
             <div class="containerDepoimento"> <!--div container depoimento-->
                 <div class="titulo"> 
                     <h3>Nossos depoimentos</h3>
@@ -132,12 +133,170 @@
                 <!--Final card item 3-->
             </div><!--Final div container depoimento-->
         </section>  <!--Final section depoimentos-->
-    </main>
-    <footer class="rodape">
+        <div class="titulo"> 
+            <h3>Perguntas Frequentes</h3>
+        </div>
+        <section class="faq-container" id="faq-container"> <!--Sessão de Perguntas Frequentes-->
+           
+            <section class="faq-question"> 
+                <div>
+                    <h3>Como saber se a terapia é para mim?</h3>
+                    <button class="button_resposta">
+ 
+                        <svg 
+                        version="1.1" 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        viewBox="0 0 330 330" 
+                        xml:space="preserve"
+                    >
+                        <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+                    c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+                        s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path>
+                    </svg>
+                    </button> 
+                </div>
+                <p class="faq-resposta">A terapia pode ajudar qualquer pessoa a lidar melhor com as emoções, o estresse e o autoconhecimento. Se você sente que enfrenta desafios que impactam sua vida, ela pode ser uma ótima opção.</p>
+            </section>
+            <section class="faq-question"> 
+                <div>
+                    <h3>Qual é a diferença entre psicólogo e psiquiatra?</h3>
+                    <button class="button_resposta">
+                        <svg 
+                        version="1.1" 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        viewBox="0 0 330 330" 
+                        xml:space="preserve"
+                    >
+                        <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+                    c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+                        s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path>
+                    </svg>
+                    </button> 
+                </div>
+                <p class="faq-resposta">Psicólogos focam em terapia e comportamento, enquanto psiquiatras, por serem médicos, podem prescrever medicamentos. Ambos podem trabalhar juntos em alguns casos.</p>
+            </section>
+            <section class="faq-question"> 
+                <div>
+                    <h3>As sessões são confidenciais?</h3>
+                    <button class="button_resposta">
+                        <svg 
+                        version="1.1" 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        viewBox="0 0 330 330" 
+                        xml:space="preserve"
+                    >
+                        <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+                    c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+                        s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path>
+                    </svg>
+                    </button> 
+                </div>
+                <p class="faq-resposta">Sim, todas as sessões são confidenciais. Em situações específicas de risco, o terapeuta pode agir para garantir sua segurança, sempre com cuidado.</p>
+            </section>
+            <section class="faq-question"> 
+                <div>
+                    <h3>Como a terapia me ajuda no dia a dia?</h3>
+                    <button class="button_resposta">
+                        <svg 
+                        version="1.1" 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        viewBox="0 0 330 330" 
+                        xml:space="preserve"
+                    >
+                        <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+                    c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+                        s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path>
+                    </svg>
+                    </button> 
+                </div>
+                <p class="faq-resposta">A terapia ajuda a desenvolver ferramentas para lidar com o estresse, melhorar relacionamentos e aumentar o autoconhecimento, promovendo bem-estar.</p>
+            </section>
+            <section class="faq-question" id="faq-question"> 
+                <div>
+                    <h3>A terapia online funciona?</h3>
+                    <button class="button_resposta">
+                        <svg 
+                        version="1.1" 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        viewBox="0 0 330 330" 
+                        xml:space="preserve"
+                    >
+                        <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+                    c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+                        s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path>
+                    </svg>
+                    </button> 
+                </div>
+                <p class="faq-resposta">Sim, a terapia online é eficaz e proporciona flexibilidade e acessibilidade, mantendo o mesmo nível de confidencialidade e profissionalismo da presencial.
 
-    </footer>
+                </p>
+            </section>
+        </section> <!--Final da sessão de Perguntas Frequentes-->
+        <section class="carrousel-consultorio" id="carrousel-consultorio"> <!--Sessão carrousel Fotos -->
+            <div class="titulo"> 
+                <h3>Fotos</h3>
+            </div>
+            <i class="fa-solid fa-angle-left"> </i>
+            <div class="carrousel"> 
+                <img src="./assets/images/img1.png" alt="img" draggable="false">
+                <img src="./assets/images/img2.png" alt="img" draggable="false">
+                <img src="./assets/images/img3.png" alt="img" draggable="false">
+                <img src="./assets/images/img4.png" alt="img" draggable="false">
+                <img src="./assets/images/img5.png" alt="img" draggable="false">
+                <img src="./assets/images/img6.png" alt="img" draggable="false">
+                <img src="./assets/images/img7.jpeg" alt="img" draggable="false">
+                <img src="./assets/images/img8.jpeg" alt="img" draggable="false">
+                <img src="./assets/images/img9.jpeg" alt="img" draggable="false">
+            </div>
+            <i class="fa-solid fa-angle-right"> </i>
+        </section> <!--Final da sessão carrousel Fotos -->
+    </main>
+    <footer class="rodape"> <!--Rodapé-->
+        <div class="container">
+            <ul>
+                <h3>Trabalho Final</h3>
+                <p>Lorem ipsum dolor sit amet. Vel autem iure ut harum. </p>
+                <div class="redes-sociais">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+            </ul>
+            <ul>
+                <h3>Links</h3>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#diferenciais">Nossos Diferencias</a></li>
+                <li><a href="#depoimentoMain">Depoimentos</a></li>
+                <li><a href="#faq-container">Perguntas Frequentes</a></li>
+                <li><a href="#carrousel-consultorio">Carrousel</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+            </ul>
+            
+            <ul>
+                <h3>Nosso Contato</h3>
+                <li>
+                    <p>+55 (00) 00000-0000</p>
+                </li>
+                <li>
+                    <p>loreninpsum@email.com</p>
+                </li>
+                <li>
+                    <p>Presidente Prudente, São Paulo <br>BRASIL</p>
+                </li>
+            </ul>
+        </div>
+        <h5>&copy;Desnvolvido Por <span>Geovana Bicalho</span></h5>	
+    </footer> <!--Final rodapé-->
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/menu.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
 </body>
 
 </html>

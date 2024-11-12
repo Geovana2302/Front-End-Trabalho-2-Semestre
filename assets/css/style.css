@@ -8,7 +8,6 @@
 
 /*estilo cabeçlho com banner*/
 html{
-    height: 500vh;
     background-color: #ffffff;
 }
 
@@ -113,6 +112,7 @@ header ul li a:hover{
 }
 
 .titulo{
+    margin-top: 15px;
     font-size: 30px;
     color: #213c8d;
     padding: 10px;
@@ -208,11 +208,12 @@ header ul li a:hover{
     width: 80px;
     display: block;
     margin: 10px auto;
+    
 }
 
 .depoimentoMain .cards-item .nome-usuario{
     font-weight: 600;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 15px;
     transition: 0.3s;
 }
@@ -247,6 +248,189 @@ header ul li a:hover{
 
 }
 
+/*sessão de perguntas frequentes*/
+.faq-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-inline: auto;
+    max-width: 850px;
+    padding-bottom: 20px;
+    width: 100%;
+   
+}
+
+.faq-question{
+    background-color: #d7f0ff;
+    border-radius: 8px;
+    padding: 14px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+  
+
+}
+.faq-question:hover{
+    background-color: #3857b7;
+    margin-top: -5px;
+    color: #fff;
+    fill: #fff;
+}
+.faq-question:active {
+    opacity: 0.9;
+}
+.faq-question > div{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    padding: 5px;
+    width:30px;
+}
+button svg{
+    width: 100%;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.faq-resposta{
+    display: none;
+    transition: all 0.2s ease-in-out;
+}
+.faq-question.active .faq-resposta{
+    animation: fadeIn 0.3s;
+    display: block;
+}
+
+/*carrousel ambiente*/
+
+.carrousel-consultorio{
+    max-width: 1200px;
+    position: relative;
+    margin-inline: auto;
+   
+}
+.carrousel-consultorio i{
+    top: 50%;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 46px;
+    background: #d7f0ff;
+    border-radius: 50%;
+    margin-left: -20px;
+    
+}
+.carrousel-consultorio i:first-child{
+    left: -23px;
+    display: none;
+}
+.carrousel-consultorio i:last-child{
+    right: -23px;
+    
+}
+
+.carrousel-consultorio .carrousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    
+}
+.carrousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carrousel.dragging img{
+    pointer-events: none;
+}
+.carrousel img{
+    height: 340px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100% / 3);
+    
+}
+.carrousel img:first-child{
+    margin-left: 0px;
+}
+/*validação contato*/
+.input-error {
+    border: 1px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/*footer*/
+
+footer{
+    background-color: #437493;
+    margin-top: 5%;
+    padding: 0;
+    
+}
+footer .container{
+    display: flex;
+    color: #fff;
+    justify-content:space-between;
+  
+}
+footer .container ul{
+    width: 25%;
+    margin-top: 10px;
+}
+footer .container h3{
+    margin-bottom: 16px;
+    font-weight: 600;
+   
+}
+footer .container .redes-sociais a{
+    margin-left: 10px;
+    font-size: 30px;
+    color: #ccc;
+}
+footer .container .redes-sociais a:hover{
+    
+    font-size: 32px;
+    color: #fff;
+}
+footer .container ul > p{
+    margin-bottom: 40px;
+}
+footer .container li{
+    margin: 10px 0;
+    list-style-type: none
+}
+footer .container a{
+    color: #fff;
+    text-decoration: none;
+}
+footer h5{
+    color: #d7f0ff;
+}
+footer h5 span{
+    color: #08298d;
+    font-size: 15px;
+}
 
 /*responsivo*/
 @media (max-width: 960px){
@@ -330,5 +514,29 @@ header ul li a:hover{
         display: flex;
         flex-direction: column;
         text-align: center;
+    }
+    .faq-question{
+        margin: 0px 23px 0 23px;
+    
+    }
+    .carrousel img{
+        width: calc(100% / 2);
+    }
+    footer .container{
+        flex-direction: column;
+      
+    
+    }
+    footer .container .ul{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    footer .container ion-icon{
+        font-size: 25px;
+    }
+}
+@media (max-width: 550px){
+    .carrousel img{
+        width: 100%;
     }
 }
